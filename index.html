@@ -1,21 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="shortcut icon" href="./src/img/letter-t.png" type="image/x-icon">
-    <title>Digital Business Card</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script type="module" src="./src/index.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="shortcut icon" href="img/letter-t.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Tom Leonard Abella</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="navbar">
+    <header>
+        <!-- Content-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container flex-lg-column ">
+            <a href="" class="navbar-brand mb-lg-4 mx-lg-auto">
+              <span class="navbar-brand h3 fw-bold d-block d-lg-none">Tom Leonard</span>
+              <img src="img/id-pic.jpeg" class="d-none d-lg-block rounded-circle"alt="Tom Leonard Abella Picture">
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto flex-lg-column text-lg-center" >
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#about-me">About Me</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <!--Content-->
+        <div id="content-wrapper">
+
+          <!--HOME-->
+          <section id="home" class="full-height about px-lg-5 " >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8  ">
+                  <p data-aos="fade-up" data-aos-delay="700"  data-aos-once="false">Hi, my name is</p>
+                  <h1 data-aos="fade-up" data-aos-delay="1000"  data-aos-once="false">Tom Leonard Abella.</h1>
+                  <p data-aos="fade-up" data-aos-delay="300"  data-aos-once="false">I'm a Computer Engineering Tech student who aspire to become a full Stack web developer. Currently I'm focused on Front-end development that will provide responsive interaction to the user.</p>
+                  <a href="./CV/CV - Tom Leonard Abella.pdf" download target="_blank"><button class="btn btn-outline-dark" data-aos="fade-right" data-aos-delay="1100"  data-aos-once="false">Download CV</button></a>
+                  <a href="#contact" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-aos="fade-right" data-aos-delay="1500"  data-aos-once="false">Contact</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--End of Home-->
+
+          <!--About Me-->
+          <section id="about-me" class="full-height px-lg-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10">
+                  <h1 class="mt-3" data-aos="fade-right" data-aos-delay="300"  data-aos-once="false">About Me</h1>
+                  <div class="container">
+                    <div class="row">
+                      <div class="pic">
+                        <img src="img/id-pic.jpeg" class="d-lg-block rounded-circle"alt="Tom Leonard Abella Picture" id="pic" data-aos="fade-right" data-aos-delay="500"  data-aos-once="false">
+                      </div>
+                      <p data-aos="fade-up" data-aos-delay="300"  data-aos-once="false">Hello! My name is Tom Leonard Abella, and I am a fourth-year Computer Engineering Tech student at the Technological University of the Philippines. I enjoy learning and developing things on the internet, and I became interested in web development when I was in senior high school, the year 2018-2019, with a strand of ICT major in Mobile App and Web Development. </p>
+                      <p data-aos="fade-up" data-aos-delay="300"  data-aos-once="false">I'm an aspiring full-stack web developer, and I'm working toward that goal by watching online tutorials, joining and participating in online sessions, boot camps, online courses, and taking advantage of a variety of other possibilities to advance my programming knowledge and abilities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!--Skills-->
+                <div class="container mt-3 mb-5">
+                  <div class="row">
+                    <!---->
+                    <div class="col-md-4 my-2 my-lg-0">
+                      <div class="card" data-aos="fade-up" data-aos-delay="300"  data-aos-once="false">
+                        <div class="card-header">Languages</div>
+                        <div class="card-body">
+                          <img src="img/html.png" alt="html logo" class="logo my-0">
+                          <img src="img/css-3.png" alt="css logo" class="logo my-0"> HTML / CSS
+                        </div>
+                        <div class="card-body">
+                          <img src="img/java-script.png" alt="js logo" class="logo mx-4 my-0"> JavaScript ES6+
+                        </div>
+                        <div class="card-body">
+                          <img src="img/python.png" alt="Python logo" class="logo mx-4 my-0">  Python
+                        </div>
+                        <div class="card-body">
+                          <img src="img/java.png" alt="java logo" class="logo mx-4 my-0">  Java
+                        </div>
+                        <div class="card-body">
+                          <img src="img/sql-server.png" alt="sql logo" class="logo mx-4 my-0">  SQL
+                        </div>
+                      </div>
+                    </div>
+                      <!---->
+                    <div class="col-md-4 my-2 my-lg-0">
+                      <div class="card" data-aos="fade-up" data-aos-delay="350"  data-aos-once="false">
+                        <div class="card-header">Frameworks</div>
+                        <div class="card-body">
+                          <img src="img/bootstrap.png" alt="bootstrap logo" class="logo mx-4 my-0">  Bootstrap
+                        </div>
+                        <div class="card-body">
+                          <img src="img/atom.png" alt="react logo" class="logo mx-4 my-0">  React JS
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                    <div class="col-md-4 my-2 my-lg-0">
+                      <div class="card" data-aos="fade-up" data-aos-delay="400"  data-aos-once="false">
+                        <div class="card-header">Other Skills</div>
+                        
+                        <div class="card-body">
+                          <img src="img/microcontroller.png" alt="microcontroller logo" class="logo mx-4 my-0">  Microcontroller
+                        </div>
+                        <div class="card-body">
+                          <img src="img/android-logo.png" alt="android logo" class="logo mx-4 my-0">  Android Studio
+                        </div>
+                        <div class="card-body">
+                          <img src="img/computer.png" alt="networking logo" class="logo mx-4 my-0">  Networking
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!--End of Skills-->
+            </div>
+          </section>
+          <!--End of about me-->
+
+          <!--Projects-->
+          <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-fluid">
+                  <h1 data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">Project</h1>
+                  <p data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">Mini Projects </p>
+                  <!--Card Group-->
+                  <div class="row">
+                    <!--Project 1-->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <div class="card my-2 " data-aos="fade-right" data-aos-delay="300"  data-aos-once="false">
+                        <img src="img/basketballScorer.png" class="card-img-top" alt="Basketball Scorer cover">
+                        <div class="card-body project-body">
+                          <h5 class="card-title h4">Basketball Scorer</h5>
+                          <p class="card-text">A web application that simulates the scoring point of the basketball</p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="https://tom-abella.github.io/Basketball-Scorer/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                          <a href="https://github.com/tom-abella/Basketball-Point-Counter.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Project 2-->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card  my-2" data-aos="fade-right" data-aos-delay="350"  data-aos-once="false">
+                      <img src="img/blackJack.png" class="card-img-top" alt="Black jack cover">
+                      <div class="card-body project-body">
+                        <h5 class="card-title h4">Black Jack</h5>
+                        <p class="card-text">A web application game that simulates the black jack casino game </p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://tom-abella.github.io/Black-Jack-Game/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                        <a href="https://github.com/tom-abella/Black-Jack-Game.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--Project 3-->
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card  my-2" data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">
+                          <img src="img/passwordGenerator.png" class="card-img-top" alt="password generator cover">
+                          <div class="card-body project-body">
+                            <h5 class="card-title h4">Password Generator</h5>
+                            <p class="card-text">A web application that will produce a random password for the user</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="https://tom-abella.github.io/Password%20Generator/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                            <a href="https://github.com/tom-abella/password-generator.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                          </div>
+                        </div>
+                        </div>
+                    <!--Project 4-->
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="card  my-2" data-aos="fade-right" data-aos-delay="450"  data-aos-once="false">
+                            <img src="img/Emoticon.png" class="card-img-top" alt="Black jack cover">
+                            <div class="card-body project-body">
+                              <h5 class="card-title h4">What's your Emoji</h5>
+                              <p class="card-text">A web application game that will ask the user what is their emoticon</p>
+                            </div>
+                            <div class="card-footer">
+                              <a href="https://tom-abella.github.io/Emoticon/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                              <a href="https://github.com/tom-abella/Emoticons.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                            </div>
+                        </div>
+                  </div>
+  <!--Second Section Project-->
+                </div>
+                <div class="row">
+                  <!--Project 5-->
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card my-2" data-aos="fade-right" data-aos-delay="300"  data-aos-once="false">
+                      <img src="img/bookmark.png" class="card-img-top" alt="counter cover">
+                      <div class="card-body project-body">
+                        <h5 class="card-title h4">Book Marker</h5>
+                        <p class="card-text">A google chrome extenstion will save the current url and input of the user in the local storage through Google tab API.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://github.com/tom-abella/Bookmark-Extension.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Project 6-->
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card my-2" data-aos="fade-right" data-aos-delay="350"  data-aos-once="false">
+                      <img src="img/unit-conversion.png" class="card-img-top" alt="Basketball Scorer cover">
+                      <div class="card-body project-body">
+                        <h5 class="card-title h4">Unit Conversion</h5>
+                        <p class="card-text">A web application that will convert the user unit input</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://tom-abella.github.io/Metric-Converter/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                        <a href="https://github.com/tom-abella/Metric-Conversion.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Project 7-->
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card my-2" data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">
+                      <img src="img/taskGiver.png" class="card-img-top" alt="password generator cover">
+                      <div class="card-body project-body">
+                        <h5 class="card-title h4">Task Giver</h5>
+                        <p class="card-text">A web application connected to Bored API that provide a task to the user</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://tom-abella.github.io/Task-Giver/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                        <a href="https://github.com/tom-abella/Task-Giver.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Project 8-->
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card my-2" data-aos="fade-right" data-aos-delay="450"  data-aos-once="false">
+                      <img src="img/Alternative-Educational-Platform.png" class="card-img-top" alt="counter cover">
+                      <div class="card-body project-body">
+                        <h5 class="card-title h4">Alternative Educational Platform</h5>
+                        <p class="card-text">A web page that uses infographics as a medium</p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="https://tom-abella.github.io/Alternative-Education-Platform/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                        <a href="https://github.com/tom-abella/Alternative-Education-Platform.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        <!--React Project-->
+                      <p class="h4 mt-4" data-aos="fade-right" data-aos-delay="300"  data-aos-once="false">Projects using React</p>
+                      <div class="row">
+                        <!--Project 1-->
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="card my-2 " data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">
+                            <img src="img/business-card.png" class="card-img-top" alt="Business Card">
+                            <div class="card-body project-body">
+                              <h5 class="card-title h4">Business Card</h5>
+                              <p class="card-text">My Digital Business Card which includes my social media accounts, portfolio links, about, and interest</p>
+                            </div>
+                            <div class="card-footer">
+                              <a href="https://tomleonardabella-businesscard.netlify.app/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                              <a href="https://github.com/tom-abella/Digital-Business-Card.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                            </div>
+                          </div>
+                        </div>
+                            <!--Project 2-->
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="card my-2 " data-aos="fade-right" data-aos-delay="400"  data-aos-once="false">
+                              <img src="img/travel-journal.png" class="card-img-top" alt="Business Card">
+                              <div class="card-body project-body">
+                                <h5 class="card-title h4">Travel Journal</h5>
+                                <p class="card-text">My travel journal showcases some of my adventure and places that I've visited.</p>
+                              </div>
+                              <div class="card-footer">
+                                <a href="https://tomleonardabella-traveljournal.netlify.app/" target="_blank"><i class="fa fa-id-card-o icons" aria-hidden="true"><span>Preview</span></i></a>
+                                <a href="https://github.com/tom-abella/travel-journal.git" target="_blank"><i class="fa fa-file-text-o icons" aria-hidden="true"><span>Repo</span></i></a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <!--End of Projects-->
+
+          <!--Contact-->
+          <!-- Modal -->
+          
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Let's Connect</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick ="Reload()"></button>
+                </div>
+                <form>
+                <div class="modal-body">
+                  <form>
+                  <div class="container" id="form-container">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+                      <label for="fullName" >Name</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email_id" placeholder="Email" required>
+                      <label for="email_id">Email </label>
+                    </div>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="message" maxlength="150" required></textarea>
+                      <label for="message">Comments</label>
+                      <button type="button" class="btn btn-light mt-3" id="send_mail" data-bs-toggle="modal" data-bs-target="#emailResult" data-bs-dismiss="modal">Send</button>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          <!--Modal-->
+
+          <!--Contact-->
+        </div>
+      <!--End of Content-->
+    </main>
+    <footer>
+      <div class="continer py-3">
+        <div class="row">
+          <div class="row" id="row">
+            <div class="cols">
+              <a href="https://www.facebook.com/tomleonard.abella/"  target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/tom-abella"  target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tom-leonard-abella/"  target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/abella_tl/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cols-8">
+          <div class="text">
+            <p class="h6 ">Tom Leonard Abella  •&copy; 2022  • Portfolio</p>
+          </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
+</body>
 </html>
